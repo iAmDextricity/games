@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -35,6 +36,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
     }
 
     h1 {
@@ -54,11 +56,13 @@
       color: #555;
     }
 
-    p {
-      margin: 0;
-      margin-bottom: 15px;
-      font-size: 1em;
-      color: #555;
+    input {
+      width: 80%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #555;
+      border-radius: 20px; /* Rounded corners */
+      box-sizing: border-box;
     }
 
     ul {
@@ -74,6 +78,11 @@
     a {
       color: #333;
       text-decoration: none;
+      display: inline-block; /* Ensures proper spacing for inline elements */
+      padding: 8px 15px;
+      border: 1px solid #555;
+      border-radius: 20px; /* Rounded corners for buttons */
+      margin-right: 10px; /* Adjust spacing between buttons */
     }
 
     a:hover {
@@ -86,6 +95,17 @@
       border: 1px solid #555;
       border-radius: 6px;
     }
+
+    button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -93,6 +113,7 @@
 <div id="left">
   <h1>Dextricity</h1>
   <h2>Unblocked Games</h2>
+  <input type="text" id="searchInput" oninput="filterList()" placeholder="Search...">
   <ul id="folderList">
     <li><a href="javascript:void(0);" onclick="loadFolderContent('2048')">2048</a></li>
     <li><a href="javascript:void(0);" onclick="loadFolderContent('DogeMiner')">DogeMiner</a></li>
@@ -226,19 +247,55 @@
     <li><a href="javascript:void(0);" onclick="loadFolderContent('wordle')">wordle</a></li>
     <li><a href="javascript:void(0);" onclick="loadFolderContent('wounded-summer')">wounded-summer</a></li>
     <li><a href="javascript:void(0);" onclick="loadFolderContent('xx142-b2exe')">xx142-b2exe</a></li>
-
   </ul>
 </div>
 
 <div id="right">
-  <iframe id="folderIframe" frameborder="0" allowfullscreen></iframe>
+  <button onclick="toggleFullscreen()">
+    <img src="https://cdn-icons-png.flaticon.com/512/4211/4211514.png" alt="Fullscreen Icon" width="30" height="30">
+  </button>
+  <iframe id="folderIframe" frameborder="0"></iframe>
 </div>
 
 <script>
-  // Function to load folder content into the iframe
   function loadFolderContent(folderName) {
     const iframe = document.getElementById('folderIframe');
     iframe.src = `https://iamdextricity.github.io/games/${encodeURIComponent(folderName)}/`;
+  }
+
+  function toggleFullscreen() {
+    const iframe = document.getElementById('folderIframe');
+
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  }
+
+  function filterList() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toUpperCase();
+    const ul = document.getElementById('folderList');
+    const li = ul.getElementsByTagName('li');
+
+    for (let i = 0; i < li.length; i++) {
+      const a = li[i].getElementsByTagName('a')[0];
+      const txtValue = a.textContent || a.innerText;
+
+      // Check for duplicates
+      const isDuplicate = [...ul.children].slice(0, i).some(item => item.textContent.trim().toUpperCase() === txtValue.trim().toUpperCase());
+
+      if (txtValue.toUpperCase().indexOf(filter) > -1 && !isDuplicate) {
+        li[i].style.display = '';
+      } else {
+        li[i].style.display = 'none';
+      }
+    }
   }
 </script>
 
