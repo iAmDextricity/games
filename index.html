@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dextricity's Games</title>
+  <link rel="icon" href="icon.webp" type="image/webp">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Work Sans', sans-serif;
+      height: 100vh;
+      display: flex;
+      background: url("https://i.ibb.co/JtST5SG/pretty.jpg") no-repeat center center fixed; 
+      background-size: cover;
+    }
+
+    #left {
+      box-sizing: border-box;
+      padding: 40px;
+      width: 30%;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      text-align: center;
+      color: #333;
+      overflow-y: auto;
+    }
+
+    #right {
+      box-sizing: border-box;
+      padding: 40px;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 2em;
+      letter-spacing: -0.04em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.2em;
+      letter-spacing: -0.04em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 1em;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #555;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #555;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="left">
+  <h1>Dextricity</h1>
+  <h2>Unblocked Games</h2>
+  <ul id="folderList">
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('2048')">2048</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('DogeMiner')">DogeMiner</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('FBWG1')">FBWG1</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('FNAF4')">FNAF4</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('adcap')">adcap</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('adofai')">adofai</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('assessment')">assessment</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('away-player-embed')">away-player-embed</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('baldi')">baldi</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('basketball-legends')">basketball-legends</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('basketball-stars')">basketball-stars</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('bison')">bison</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('bitlife')">bitlife</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('boxing-physics2')">boxing-physics2</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('breaklock')">breaklock</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('burger')">burger</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('cell')">cell</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('chrome-dino')">chrome-dino</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('cookieclicker')">cookieclicker</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('court')">court</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('crossy')">crossy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('doodle')">doodle</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('doodlegod')">doodlegod</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('dreader')">dreader</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('drift')">drift</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('exhibit')">exhibit</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('flappy')">flappy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('fnf-w7')">fnf-w7</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('freezeria')">freezeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('friendlyfire')">friendlyfire</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('fruitninja')">fruitninja</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('game-inside')">game-inside</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('georgeandtheprinter')">georgeandtheprinter</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('getaway-shootout')">getaway-shootout</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('greybox')">greybox</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('happy')">happy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('hotdoggeria')">hotdoggeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('jetpackjoyride')">jetpackjoyride</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('knifehit')">knifehit</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('knight')">knight</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('lose95')">lose95</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('louie')">louie</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('mariovsluigi')">mariovsluigi</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('mcbeta0.30')">mcbeta0.30</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('open')">open</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('papasb')">papasb</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('pizzeria')">pizzeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('portaboy')">portaboy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('pressing')">pressing</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('retro-bowl')">retro-bowl</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('robogo')">robogo</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('ruffle')">ruffle</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('run3')">run3</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sansfight')">sansfight</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sketchbook')">sketchbook</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('slope')">slope</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sm64')">sm64</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('snake')">snake</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('soccer-random')">soccer-random</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('subway')">subway</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('superhot')">superhot</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('2048')">2048</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('DogeMiner')">DogeMiner</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('FBWG1')">FBWG1</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('FNAF4')">FNAF4</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('adcap')">adcap</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('adofai')">adofai</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('assessment')">assessment</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('away-player-embed')">away-player-embed</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('baldi')">baldi</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('basketball-legends')">basketball-legends</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('basketball-stars')">basketball-stars</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('bison')">bison</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('bitlife')">bitlife</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('boxing-physics2')">boxing-physics2</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('breaklock')">breaklock</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('burger')">burger</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('cell')">cell</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('chrome-dino')">chrome-dino</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('cookieclicker')">cookieclicker</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('court')">court</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('crossy')">crossy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('doodle')">doodle</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('doodlegod')">doodlegod</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('dreader')">dreader</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('drift')">drift</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('exhibit')">exhibit</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('flappy')">flappy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('fnf-w7')">fnf-w7</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('freezeria')">freezeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('friendlyfire')">friendlyfire</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('fruitninja')">fruitninja</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('game-inside')">game-inside</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('georgeandtheprinter')">georgeandtheprinter</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('getaway-shootout')">getaway-shootout</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('greybox')">greybox</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('happy')">happy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('hotdoggeria')">hotdoggeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('jetpackjoyride')">jetpackjoyride</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('knifehit')">knifehit</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('knight')">knight</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('lose95')">lose95</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('louie')">louie</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('mariovsluigi')">mariovsluigi</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('mcbeta0.30')">mcbeta0.30</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('open')">open</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('papasb')">papasb</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('pizzeria')">pizzeria</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('portaboy')">portaboy</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('pressing')">pressing</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('retro-bowl')">retro-bowl</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('robogo')">robogo</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('ruffle')">ruffle</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('run3')">run3</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sansfight')">sansfight</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sketchbook')">sketchbook</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('slope')">slope</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sm64')">sm64</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('snake')">snake</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('soccer-random')">soccer-random</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('subway')">subway</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('superhot')">superhot</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('sword')">sword</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('tacomia')">tacomia</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('tetris')">tetris</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('touch')">touch</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('tunnelrush')">tunnelrush</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('waflash')">waflash</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('wbwwb')">wbwwb</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('wordle')">wordle</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('wounded-summer')">wounded-summer</a></li>
+    <li><a href="javascript:void(0);" onclick="loadFolderContent('xx142-b2exe')">xx142-b2exe</a></li>
+
+  </ul>
+</div>
+
+<div id="right">
+  <iframe id="folderIframe" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script>
+  // Function to load folder content into the iframe
+  function loadFolderContent(folderName) {
+    const iframe = document.getElementById('folderIframe');
+    iframe.src = `https://iamdextricity.github.io/games/${encodeURIComponent(folderName)}/`;
+  }
+</script>
+
+</body>
+</html>
